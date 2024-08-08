@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: monospace;
+  color: #fff;
+  background-color: #111111;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+img {
+  width: 400px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+p:nth-child(2) {
+  color: #637373; /* Start the flag with owasp{, this is a portion of the flag decode it */
+}
+
+p:nth-child(3) {
+  color: #5f666c; /* Another potion of the flag */
+}
+
+p:nth-child(4) {
+  color: #616721; /* The final piece of the flag, end with } */
+}
+
+#fake {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 30%;
+  padding: 10px;
+  font-size: 1rem;
+  margin: 10px 10px 0 0;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+#btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin: 10px 0 0 0;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  transition: all 0.2s;
+  cursor: pointer;
+  &:hover {
+    background-color: #000;
+    color: #fff;
+  }
+}
+
+label {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  transition: all 0.2s;
+}
