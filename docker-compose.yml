@@ -6,6 +6,6 @@ services:
   second:
     build: second/.
     ports:
-      - "6970:6969"
+      - "6970:5000"
   
   
