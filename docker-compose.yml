@@ -1,0 +1,11 @@
+services:
+  first:
+    build: first/.
+    ports:
+      - "6969:80"
+  second:
+    build: second/.
+    ports:
+      - "6970:6969"
+  
+  
