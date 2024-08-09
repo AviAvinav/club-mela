@@ -15,13 +15,15 @@ def check():
             result = subprocess.run(["python3", "-c", pythoninput], stdout=subprocess.PIPE, text=True)
             return render_template('index.html', value1=result.stdout)
         else:
-            return render_template('error.html')
+            return render_template('err0r.html')
 
 def checkInput(a):
     check = True
     for x in ['open','os','system','read','write','exec']:
         if x in a:
             check = False
+    return check
 
-if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0")
+if __name__ == '__main__':
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host='0.0.0.0', port=port)
