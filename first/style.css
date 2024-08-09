@@ -34,7 +34,7 @@ p {
 }
 
 p:nth-child(3) {
-  color: #637373; /* Start the flag with owasp{, this is a portion of the flag decode it */
+  color: #637373; /* Start the flag with d4rkc0de{, this is a portion of the flag decode it */
 }
 
 p:nth-child(4) {
