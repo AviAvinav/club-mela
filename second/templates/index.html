@@ -1,72 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-    <head>
-        <title>Input Form</title>
-		<link rel="stylesheet" href="./style.css">
-		<style>* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+  <head>
+    <title>Input Form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
 
-body {
-  background: #111;
-  color: #fff;
-  font-family: monospace;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
+      body {
+        background: #111;
+        color: #fff;
+        font-family: monospace;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
 
-form:first-of-type {
-  margin-top: 10rem;
-  font-size: 0.9rem;
-  & > h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  & > * {
-    margin-bottom: 15px;
-  }
-  & > button {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-    background: #fff;
-    color: #000;
-    border: 1px solid #fff;
-    cursor: pointer;
-    border-radius: 2px;
-    transition: all 0.2s;
-    &:hover {
-      background: #111;
-      color: #fff;
-    }
-  }
-  & > input {
-    outline: none;
-    border: none;
-    font-size: 0.9rem;
-    padding: 5px;
-    margin: 10px 0;
-  }
-}
+      form:first-of-type {
+        margin-top: 10rem;
+        font-size: 0.9rem;
+        & > h1 {
+          font-size: 2rem;
+          margin-bottom: 20px;
+        }
+        & > * {
+          margin-bottom: 15px;
+        }
+        & > button {
+          padding: 10px 20px;
+          font-size: 0.9rem;
+          background: #fff;
+          color: #000;
+          border: 1px solid #fff;
+          cursor: pointer;
+          border-radius: 2px;
+          transition: all 0.2s;
+          &:hover {
+            background: #111;
+            color: #fff;
+          }
+        }
+        & > input {
+          outline: none;
+          border: none;
+          font-size: 0.9rem;
+          padding: 5px;
+          margin: 10px 0;
+        }
+      }
 
-form:last-of-type {
-  margin-top: 30px;
-  font-size: 0.9rem;
-}</style>
-    </head>
-    <body>
-        <form action="/check" method="post">
-            <h1>d4rkc0de{1_l0v3_Pyth0nz_🐍}</h1>
-            <h3>We are allowing users to run and test python commands. But remember don't try to be sneaky. We are keeping an eye on you :)</h3>
-            <label for="input-field">Enter your python command:</label>
-            <input type="text" id="input-field" name="input">
-            <br>
-            <button type="submit">Submit</button>
-        </form>
-        <form>
-            {{value1}}
-        </form>
-    </body>
+      form:last-of-type {
+        margin-top: 30px;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/check" method="post">
+      <h1>d4rkc0de{this_aint_it_dawg}</h1>
+      <h3>
+        So, uh, the above is obviously not a flag as it says. This is a python
+        challenge try stuff here, I don't know maybe read the label below to get
+        a hint.
+      </h3>
+      <label for="input-field">Enter your python command:</label>
+      <input type="text" id="input-field" name="input" />
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+    <form>{{value1}}</form>
+  </body>
 </html>
