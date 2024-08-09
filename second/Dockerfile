@@ -1,18 +1,9 @@
-# Use the official Python image from the Docker Hub
 FROM python:3.11-slim
-
-# Set the working directory inside the container
 WORKDIR /app
-
-# Copy the requirements file into the container
-COPY requirements.txt requirements.txt
-
-# Install the Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Copy the rest of the application code into the container
 COPY . .
-
-# Specify the command to run the Flask application
+RUN pip install --no-cache-dir -r requirements.txt
+RUN echo "d4rkc0de{sh!t_s3cur3d_smh}" > /flag.txt
+RUN chmod 644 /flag.txt 
+RUN groupadd -r user && useradd -r -g user user
+USER user
 CMD ["python", "app.py"]
-
