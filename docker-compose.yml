@@ -9,6 +9,7 @@ services:
       - "6970:5000"
   third:
     build: third/ctf/.
+    ports:
       - "6971:8080"
   
   
