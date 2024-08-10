@@ -11,5 +11,3 @@ services:
     build: third/ctf/.
     ports:
       - "6971:8080"
-  
-  
