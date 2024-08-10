@@ -7,5 +7,8 @@ services:
     build: second/.
     ports:
       - "6970:5000"
+  third:
+    build: third/ctf/.
+      - "6971:8080"
   
   
